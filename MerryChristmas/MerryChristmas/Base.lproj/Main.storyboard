@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MerryChristmas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="olena-bohovyk-iVnKChvQJZA-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qHd-KV-aNW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JC-qc-Fn8" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merry Christmas🎄⛄️" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fB-Vk-rMf">
+                                <rect key="frame" x="16" y="172" width="361" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="hXj-Xv-22c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.20000001789999999" green="0.231372565" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5JC-qc-Fn8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LoP-ED-r0s"/>
+                            <constraint firstAttribute="bottom" secondItem="5JC-qc-Fn8" secondAttribute="bottom" id="Nsa-q8-1he"/>
+                            <constraint firstItem="5JC-qc-Fn8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="XDc-DQ-4xj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fB-Vk-rMf" secondAttribute="trailing" constant="16" id="awc-nd-mGB"/>
+                            <constraint firstItem="1fB-Vk-rMf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="cp8-uB-dSw"/>
+                            <constraint firstItem="5JC-qc-Fn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hi6-kl-u2c"/>
+                            <constraint firstItem="1fB-Vk-rMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jpb-1c-dML"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="qHd-KV-aNW" id="efa-FH-Yas"/>
+                        <outlet property="lottieView" destination="5JC-qc-Fn8" id="UTg-bh-X6a"/>
+                        <outlet property="mainLabel" destination="1fB-Vk-rMf" id="tFk-Uy-B8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.8167938931297707" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="olena-bohovyk-iVnKChvQJZA-unsplash.jpg" width="4000" height="6000"/>
+    </resources>
+</document>
